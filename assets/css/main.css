@@ -2107,6 +2107,84 @@ button,
         right: -0.5em;
         top: 0; } }
 
+#banner2 {
+  padding: 6em 0 4em 0 ;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex; }
+  #banner2 h1 {
+    margin-top: -0.125em; }
+  #banner2 .content {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 70%; }
+  #banner2 .image {
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 0 2em 4em;
+    width: 35%; }
+    #banner2 .image img {
+      height: 100%;
+      -moz-object-fit: scale-down;
+      -webkit-object-fit: scale-down;
+      -ms-object-fit: scale-down;
+      object-fit: scale-down;
+      -moz-object-position: top;
+      -webkit-object-position: top;
+      -ms-object-position: top;
+      object-position: top;
+      width: 100%; }
+  @media screen and (orientation: portrait) {
+    #banner2 {
+      -moz-flex-direction: column-reverse;
+      -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+      #banner2 h1 br {
+        display: none; }
+      #banner2 .content {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        width: 100%; }
+      #banner2 .image {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        margin: 0 0 4em 0;
+        height: 25em;
+        max-height: 50vh;
+        min-height: 18em;
+        width: 100%; } }
+  @media screen and (orientation: portrait) and (max-width: 480px) {
+    #banner2 .image {
+      max-height: 35vh; } }
+
+
 /* Banner */
 #banner {
   padding: 6em 0 4em 0 ;
