@@ -31,7 +31,55 @@ Most of the time we do have open topics for bachelor and master thesis projects.
 <br>
 									<!-- Content -->
 										<h2 id="content">Possible Topics</h2>
-										<p>TBA                                                               </section>
+										<h3 id="content">Dynamic Weighted Matching</h3>
+										<p>
+                                                                                
+<p>The matching problem is one of the most prominently studied combinatorial graph problems having a variety of practical applications. 
+A matching M of a graph G=(V,E) is a subset of edges such that no two
+elements of M have a common end point.
+In practice, graphs often change over time, e.g., edges are inserted or deleted in the graph as the time progresses.
+For example, new relations between objects of a network may be created or removed over time (for example in the Facebook network).
+Even though the matching problem can be solved in polynomial time, computing a new matching from scratch every time the graph changes is an expensive task on huge networks, as this ignores the previously computed information on the given instance.</p>
+
+<p>Here, we want to bridge the gap between theory and practice that is currently observed for the fully dynamic maximal matching problem. 
+In the project, we want to engineer several dynamic <b>weighted</b> maximal matching algorithms as well as an algorithm that is able to maintain the maximum weighted matching. 
+To this end, we will look at two novel dynamic algorithms: a random walk-based algorithm as well as a dynamic algorithm that searches for augmenting paths. Without depth bound, the latter algorithm will be able to maintain a maximum matching.
+The thesis requires very good programming skills in C++ and experience with Linux and bash.</p>
+
+<h3 id="content">Dynamic Independent Sets of Rectangles</h3>
+<p> Map labeling is a classical problem in cartography and geographic information systems (GIS) that asks to place labels for area, line, and point features, with the goal to select and place the maximum number of independent, i.e., overlap-free, labels. A practically interesting case is point labeling with axis-parallel rectangular labels of common size. In a fully dynamic setting, at each time step, either a new label appears or an existing label disappears. Then, the challenge is to maintain a maximum cardinality subset of pairwise independent labels with sub-linear update time. The project plans to engineer a new algorithm for the problem based on recent theoretical discoveries.</p>
+
+<h3 id="content">Biclique Search at Scale</h3>
+<p> Maximum biclique search, which finds the biclique with the maximum  number  of  edges  in  a  bipartite  graph,  is  a  fun-damental problem with a wide spectrum of applications indifferent domains. Here, we want to apply reductions to compute a problem kernel. Given the problem kernel, we will still be able to compute the optimum solution. However, since we want a fast solution, we want to apply a heuristic algorithm on the problem kernel. </p>
+
+
+<h3 id="content">Scalable Weighted Independent Sets</h3>
+<p> The maximum weight independent set problem is an NP-hard problem that has attracted much attention in the combinatorial optimization community, due to its difficulty and its importance in many fields.
+Given a graph G=(V,E,w) with weight function w:V -> R+, the goal of the maximum weight independent set problem is to compute a subset of vertices I of V with maximum total weight, such that no vertices in I are adjacent to one another.
+Such a set is called a maximum weight independent set (MWIS).
+The maximum weight independent set problem has applications spanning many disciplines, including signal transmission, information retrieval, and computer vision.
+The goal of this project is to develop a scalable shared-memory parallel algorithm for the weighted independent set problem.
+</p>
+ 
+<h3 id="content">Partitioning with Motifs</h3>
+<p> The graph partitioning problem is to partition a graph into a given number of balanced blocks, such that the number of edges running between the blocks is minimized. A new version of the problem is called partitioning with Motifs. Here, given a Motif, for example a triangle, the objective is changed to minimize the number of Motifs cut. The goal of this project is to engineer new algorithms for problems, in particular by using a weighting scheme, reductions and our graph partitioning framework KaHIP.</p>
+
+
+<h3 id="content">Machine Learning in Combinatorial Optimization</h3>
+<p> Machine learning is a powerful framework to do all kinds of things. Recently, machine learning has also been applied in combinatorial optimization. In this project, we want to learn reductions to reduce problems to problem kernel. For example, in a graph, we may be able to decide which parts of it belong to a solution or not and hence remove them or (in case of a branch-and-reduce algorithm) branch on solution vertices first. There are a variety of problem where this may apply. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           </section>
 
 
 						</div>
