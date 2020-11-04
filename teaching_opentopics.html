@@ -79,6 +79,15 @@ The goal of this project is to develop a scalable shared-memory parallel algorit
 <p> Machine learning is a powerful framework to do all kinds of things. Recently, machine learning has also been applied in combinatorial optimization. In this project, we want to learn reductions to reduce problems to a problem kernel. For example, in a graph, we may be able to decide which parts of it belong to a solution or not and hence remove them or (in case of a branch-and-reduce algorithm) branch on solution vertices first. There are a variety of problem where this may apply. </p>
 
 
+<h3 id="content">Hierarchical Partitioning Connected Partioning in Distributed Memory</h3>
+<p>In computer science, engineering, and related fields, graph partitioning is a common technique. 
+For example, in parallel computing good partitionings of unstructured graphs are very valuable.
+In this area, graph partitioning is mostly used to partition the underlying graph model of computation and communication.
+Roughly speaking, nodes in this graph denote computation units, and edges represent communication. 
+This graph needs to be partitioned such that there are few edges between the blocks (pieces). 
+In particular, if we want to use k processors we want to partition the graph into k blocks of about equal size. 
+<p>
+In this topic, together with Prof. Dr. P. Bastian, we want to engineer an algorithm that computes a hierarchically nested partition of a graph in a top down fashion. An additional constraint is that, due to the application, the blocks of the partition have to be connected. Lastly, if a sequential prototype has been successfully implemented, we want to transfer this algorithm into distributed memory.
 
 
 
