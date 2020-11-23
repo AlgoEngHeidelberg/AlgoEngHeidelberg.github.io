@@ -89,6 +89,8 @@ In particular, if we want to use k processors we want to partition the graph int
 <p>
 In this topic, together with Prof. Dr. P. Bastian, we want to engineer an algorithm that computes a hierarchically nested partition of a graph in a top down fashion. An additional constraint is that, due to the application, the blocks of the partition have to be connected. Lastly, if a sequential prototype has been successfully implemented, we want to transfer this algorithm into distributed memory.
 
+<h3 id="content">Large k Graph Partitioning</h3>
+Here, like in the previous topic, we are also looking at graph partitioning. The particular focus here will be to engineer algorithm that can partition graphs into a very large number of blocks. For example, the partitioning problem will be significantly different if the number of blocks is set to k=n/2. In this case, the problem is in P (not in NP anymore) and is very much like graph matching.
 
 
 
