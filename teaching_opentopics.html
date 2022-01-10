@@ -93,14 +93,26 @@ In this topic, together with Prof. Dr. P. Bastian, we want to engineer an algori
 Here, like in the previous topic, we are also looking at graph partitioning. The particular focus here will be to engineer algorithm that can partition graphs into a very large number of blocks. For example, the partitioning problem will be significantly different if the number of blocks is set to k=n/2. In this case, the problem is in P (not in NP anymore) and is very much like graph matching.
 
 
+<p>
 <h3 id="content">Engineering A State-of-The-Art Max Clique Solver</h3>
 A clique C in an undirected graph G = (V, E), where V is the set of vertices and E is the set of edges, is a subset of V such that all its vertices are connected. The size of C is its cardinality. The maximum clique problem is to find a clique of maximum size in G.  An important generalization of the maximum clique problem is the maximum weight clique problem, in which the graph has a weight function w that assigns a positive integer called weight to each vertex, and the weight of a clique C is defined to be the total weight of the vertices in C. The project has the goal to transfer reduction rules that have recently been developed for the dual weighted independent set problem to the max clique problem and thus improving the state of the art for the maximum weight clique problem. On the reduced problem, one can then apply an exact algorithm or a heuristic algorithm to solve the problem. 
 
 
 
 
+<p>
 <h3 id="content">Dynamic Orbit Partition</h3>
 A graph isomorphism is a mapping between the nodes of two graphs that preserves the edges. An automorphism is an isomorphism of a graph to itself. The (non-trivial) automorphisms intuitively represent the symmetries of a graph. Two nodes are in the same orbit, if there is an automorphism that maps one vertex to the other. The orbit partition is of interest for symmetry breaking techniques for various search problems. The goal of this project is to develop dynamic algorithms for computing the orbit partition, i.e., updating the orbit partition when the input graph changes faster than recomputing it from scratch.
+
+
+<p>
+<h3 id="content">Engineering Algorithms in Transport Logistics</h3>
+        This is a collaboration with the PTV group. 
+PTV Group offers a wide range of software solutions to help cities and companies shape smart, sustainable and safe transportation and mobility.
+Planning and optimizing transport logistics is one of the central issues that PTV deals with. This thesis should deal with the ``consideration of local knowledge of drivers when delivering parcels''.
+
+Here, we want to determine on the basis of tours driven in delivery areas how likely it is that a driver would drive to the respective stations one after the other if he is very familiar with the area. With these values, we want to change the existing algorithm in such a way that not only the imputed costs are optimized on the basis of the underlying map, but also the driver's ``know-how'' is incorporated. The idea is that the result is similarly good in terms of the quality, but looks more like what an experienced driver would drive.
+<a href="https://stellenangebote.ptvgroup.com/Abschlussarbeit-im-Bereich-Entwicklung-von-Algorithmen-in--de-j1669.html?sid=4b644ee68b369e0ce22805ef6b5fae57"> Link to description page of PTV (german).</a>
 
                                                            </section>
 
