@@ -1,191 +1,209 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Algorithm Engineering Group Heidelberg</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Algorithm Engineering Group Heidelberg</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="team.html" class="logo"><strong>Open</strong> Topics</a>
+          </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+          <section>
+            Most of the time we do have open topics for bachelor and master thesis projects. The topics are designed as real research projects, i.e. the projects are very advanced and require a lot of work, but often result in a publication
+            (depending on the topic, the student and the type of the thesis). If you are interested in writing your thesis with us, send us an email. Below you find example thesis topics, we typically have more topics available. All thesis
+            projects require very good programming skills in C++ and experience with Linux and bash. <b> If you are interested, send us an email!</b>
+            <br />
+            <br />
+            <!-- Content -->
+            <h2 id="content">Possible Topics</h2>
+            <h3 id="content">Dynamic Dynamic Programming for the Knapsack Problem</h3>
+            <p>
+              Prof. Stefan Neumann from KTH Stockholm recently gave a talk about his recent result "Dynamic Maintenance of Monotone Dynamic Programs and Applications". You can find the talk slides <a href="slides/talkstefan.pdf">here</a>.
+              We are now actively searching for a master student to engeineer this type of dynamic dynamic programming algorithms in particular for the knapsack problem. This includes implementing standard DP formulations for the problem,
+              novel ones (as the ones from the talk) and then comparisons with existing methods. We expect that this project will yield a publication after it is finished.
+            </p>
+            <p></p>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+            <h3 id="content">Dynamic Weighted Matching</h3>
+            <p></p>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="team.html" class="logo"><strong>Open</strong> Topics</a>
-								</header>
+            <p>
+              The matching problem is one of the most prominently studied combinatorial graph problems having a variety of practical applications. A matching M of a graph G=(V,E) is a subset of edges such that no two elements of M have a
+              common end point. In practice, graphs often change over time, e.g., edges are inserted or deleted in the graph as the time progresses. For example, new relations between objects of a network may be created or removed over time
+              (for example in the Facebook network). Even though the matching problem can be solved in polynomial time, computing a new matching from scratch every time the graph changes is an expensive task on huge networks, as this
+              ignores the previously computed information on the given instance. Another nice thesis project is to look at hypergraph matching.
+            </p>
 
-<section>
-Most of the time we do have open topics for bachelor and master thesis projects. The topics are designed as real research projects, i.e. the projects are very advanced and require a lot of work, but often result in a publication (depending on the topic, the student and the type of the thesis).  If you are interested in writing your thesis with us, send us an email. Below you find example thesis topics, we typically have more topics available. 
-All thesis projects require very good programming skills in C++ and experience with Linux and bash. <b> If you are interested, send us an email!</b>
-<br>
-<br>
-									<!-- Content -->
-										<h2 id="content">Possible Topics</h2>
-										<h3 id="content">Dynamic Dynamic Programming for the Knapsack Problem</h3>
-										<p>
- 
-Prof. Stefan Neumann from KTH Stockholm recently gave a talk about his recent result "Dynamic Maintenance of Monotone Dynamic Programs and Applications". You can find the talk slides <a href="slides/talkstefan.pdf">here</a>. We are now actively searching for a master student to engeineer this type of dynamic dynamic programming algorithms in particular for the knapsack problem. This includes implementing standard DP formulations for the problem, novel ones (as the ones from the talk) and then comparisons with existing methods. We expect that this project will yield a publication after it is finished.</p>
-<p>
+            <p>
+              Here, we want to bridge the gap between theory and practice that is currently observed for the fully dynamic maximal matching problem. In the project, we want to engineer several dynamic <b>weighted</b> maximal matching
+              algorithms as well as an algorithm that is able to maintain the maximum weighted matching. To this end, we will look at two novel dynamic algorithms: a random walk-based algorithm as well as a dynamic algorithm that searches
+              for augmenting paths. Without depth bound, the latter algorithm will be able to maintain a maximum matching.
+            </p>
 
-										<h3 id="content">Dynamic Weighted Matching</h3>
-										<p>
-                                                                                
-<p>The matching problem is one of the most prominently studied combinatorial graph problems having a variety of practical applications. 
-A matching M of a graph G=(V,E) is a subset of edges such that no two
-elements of M have a common end point.
-In practice, graphs often change over time, e.g., edges are inserted or deleted in the graph as the time progresses.
-For example, new relations between objects of a network may be created or removed over time (for example in the Facebook network).
-Even though the matching problem can be solved in polynomial time, computing a new matching from scratch every time the graph changes is an expensive task on huge networks, as this ignores the previously computed information on the given instance. Another nice thesis project is to look at hypergraph matching.</p>
+            <p>
+              On the theory side, it may be interesting to have a better analysis for the length of augmenting paths in random graphs or in general graphs with random insertions, as the optimum machting algorithms for the static case
+              perform much better than what theory currently predits. This analysis project will be done jointly with Jun.-Prof. Felix Joos.
+            </p>
+            <h3 id="content">Engineering Algorithms for Partitioning Problems @ Cadence</h3>
+            In computer science, engineering, and related fields, graph partitioning is a common technique. Typically a graph needs to be partitioned into a given number of balanced blocks such that there are few edges between the blocks
+            (pieces). In an appliation at Cadence the input is a directed graph and roughly speaking one wants to compute a partition of this graph such that the cut size is minimized as well as the number of hops on a any path in the
+            network. This project would be done in Munich as an internship and locally would be handled as a master thesis topic. If you are interested in this topic, send an email to Prof. Schulz and you will receive a concrete problem
+            description. More details about the internship can be found <a href="slides/InternJobDescrCadence.pdf"> here</a>.
 
-<p>Here, we want to bridge the gap between theory and practice that is currently observed for the fully dynamic maximal matching problem. 
-In the project, we want to engineer several dynamic <b>weighted</b> maximal matching algorithms as well as an algorithm that is able to maintain the maximum weighted matching. 
-To this end, we will look at two novel dynamic algorithms: a random walk-based algorithm as well as a dynamic algorithm that searches for augmenting paths. Without depth bound, the latter algorithm will be able to maintain a maximum matching. 
+            <p></p>
+            <h3 id="content">Hypergraph Matching</h3>
+            <p>
+              Finding a large (weighted matching), as stated above, is an important problem in practice. A generalization of graphs are hypergraphs. In a hypergraph an edge can connect more than two nodes. In contrast to the matching
+              problem in graphs, the maximum (weight) matching problem in hypergraphs is NP-complete. In this project, we want to develop heuristics, problem reductions as well as a branch-and-reduce algorithm for the problem. The project
+              will be jointly done with Jun.-Prof. Felix Joos.
+            </p>
 
-<p> On the theory side, it may be interesting to have a better analysis for the length of augmenting paths in random graphs or in general graphs with random insertions, as the optimum machting algorithms for the static case perform much better than what theory currently predits. This analysis project will be done jointly with Jun.-Prof. Felix Joos.</p> 
-</p>
- <p>
-<h3 id="content">Engineering Algorithms for Partitioning Problems @ Cadence </h3>
-In computer science, engineering, and related fields, graph partitioning is a common technique. 
-Typically a graph needs to be partitioned into a given number of balanced blocks such that there are few edges between the blocks (pieces). 
-In an appliation at Cadence the input is a directed graph and roughly speaking one wants to compute a partition of this graph such that the cut size is minimized as well as the number of hops on a any path in the network. This project would be done in Munich as an internship and locally would be handled as a master thesis topic. If you are interested in this topic, send an email to Prof. Schulz and you will receive a concrete problem description. More details about the internship can be found <a href="slides/InternJobDescrCadence.pdf"> here</a>.
+            <h3 id="content">Dynamic Independent Sets of Rectangles</h3>
+            <p>
+              Map labeling is a classical problem in cartography and geographic information systems (GIS) that asks to place labels for area, line, and point features, with the goal to select and place the maximum number of independent,
+              i.e., overlap-free, labels. A practically interesting case is point labeling with axis-parallel rectangular labels of common size. In a fully dynamic setting, at each time step, either a new label appears or an existing label
+              disappears. Then, the challenge is to maintain a maximum cardinality subset of pairwise independent labels with sub-linear update time. The project plans to engineer a new algorithm for the problem based on recent theoretical
+              discoveries.
+            </p>
 
-<p>
-<h3 id="content">Hypergraph Matching</h3>
-<p>
-Finding a large (weighted matching), as stated above, is an important problem in practice. A generalization of graphs are hypergraphs. In a hypergraph an edge can connect more than two nodes. In contrast to the matching problem in graphs, the maximum (weight) matching problem in hypergraphs is NP-complete. In this project, we want to develop heuristics, problem  reductions as well as a branch-and-reduce algorithm for the problem. The project will be jointly done with Jun.-Prof. Felix Joos.
-</p>
-                                                                               
+            <h3 id="content">Biclique Search at Scale</h3>
+            <p>
+              Maximum biclique search, which finds the biclique with the maximum number of edges in a bipartite graph, is a fun-damental problem with a wide spectrum of applications indifferent domains. Here, we want to apply reductions to
+              compute a problem kernel. Given the problem kernel, we will still be able to compute the optimum solution. However, since we want a fast solution, we want to apply a heuristic algorithm on the problem kernel.
+            </p>
 
-<h3 id="content">Dynamic Independent Sets of Rectangles</h3>
-<p> Map labeling is a classical problem in cartography and geographic information systems (GIS) that asks to place labels for area, line, and point features, with the goal to select and place the maximum number of independent, i.e., overlap-free, labels. A practically interesting case is point labeling with axis-parallel rectangular labels of common size. In a fully dynamic setting, at each time step, either a new label appears or an existing label disappears. Then, the challenge is to maintain a maximum cardinality subset of pairwise independent labels with sub-linear update time. The project plans to engineer a new algorithm for the problem based on recent theoretical discoveries.</p>
+            <h3 id="content">Scalable/Memetic Weighted Independent Sets</h3>
+            <p>
+              The maximum weight independent set problem is an NP-hard problem that has attracted much attention in the combinatorial optimization community, due to its difficulty and its importance in many fields. Given a graph G=(V,E,w)
+              with weight function w:V -> R+, the goal of the maximum weight independent set problem is to compute a subset of vertices I of V with maximum total weight, such that no vertices in I are adjacent to one another. Such a set is
+              called a maximum weight independent set (MWIS). The maximum weight independent set problem has applications spanning many disciplines, including signal transmission, information retrieval, and computer vision. The goal of this
+              project is to develop a scalable shared-memory parallel algorithm for the weighted independent set problem. Another option is to develop a memetic algorithm for the problem. See
+              <a href="http://algo2.iti.kit.edu/lamm/thesis/mwis.pdf"> here </a> for a german topic description.
+            </p>
 
-<h3 id="content">Biclique Search at Scale</h3>
-<p> Maximum biclique search, which finds the biclique with the maximum  number  of  edges  in  a  bipartite  graph,  is  a  fun-damental problem with a wide spectrum of applications indifferent domains. Here, we want to apply reductions to compute a problem kernel. Given the problem kernel, we will still be able to compute the optimum solution. However, since we want a fast solution, we want to apply a heuristic algorithm on the problem kernel. </p>
+            <h3 id="content">Partitioning with Motifs</h3>
+            <p>
+              The graph partitioning problem is to partition a graph into a given number of balanced blocks, such that the number of edges running between the blocks is minimized. A new version of the problem is called partitioning with
+              Motifs. Here, given a Motif, for example a triangle, the objective is changed to minimize the number of Motifs cut. The goal of this project is to engineer new algorithms for problems, in particular by using a weighting
+              scheme, reductions and our graph partitioning framework KaHIP.
+            </p>
 
+            <h3 id="content">Machine Learning in Combinatorial Optimization</h3>
+            <p>
+              Machine learning is a powerful framework to do all kinds of things. Recently, machine learning has also been applied in combinatorial optimization. In this project, we want to learn reductions to reduce problems to a problem
+              kernel. For example, in a graph, we may be able to decide which parts of it belong to a solution or not and hence remove them or (in case of a branch-and-reduce algorithm) branch on solution vertices first. There are a variety
+              of problem where this may apply.
+            </p>
 
-<h3 id="content">Scalable/Memetic Weighted Independent Sets</h3>
-<p> The maximum weight independent set problem is an NP-hard problem that has attracted much attention in the combinatorial optimization community, due to its difficulty and its importance in many fields.
-Given a graph G=(V,E,w) with weight function w:V -> R+, the goal of the maximum weight independent set problem is to compute a subset of vertices I of V with maximum total weight, such that no vertices in I are adjacent to one another.
-Such a set is called a maximum weight independent set (MWIS).
-The maximum weight independent set problem has applications spanning many disciplines, including signal transmission, information retrieval, and computer vision.
-The goal of this project is to develop a scalable shared-memory parallel algorithm for the weighted independent set problem. Another option is to develop a memetic algorithm for the problem. See <a href="http://algo2.iti.kit.edu/lamm/thesis/mwis.pdf"> here </a> for a german topic description.
-</p>
- 
+            <h3 id="content">Hierarchical Partitioning Connected Partioning in Distributed Memory</h3>
+            <p>
+              In computer science, engineering, and related fields, graph partitioning is a common technique. For example, in parallel computing good partitionings of unstructured graphs are very valuable. In this area, graph partitioning
+              is mostly used to partition the underlying graph model of computation and communication. Roughly speaking, nodes in this graph denote computation units, and edges represent communication. This graph needs to be partitioned
+              such that there are few edges between the blocks (pieces). In particular, if we want to use k processors we want to partition the graph into k blocks of about equal size.
+            </p>
 
-<h3 id="content">Partitioning with Motifs</h3>
-<p> The graph partitioning problem is to partition a graph into a given number of balanced blocks, such that the number of edges running between the blocks is minimized. A new version of the problem is called partitioning with Motifs. Here, given a Motif, for example a triangle, the objective is changed to minimize the number of Motifs cut. The goal of this project is to engineer new algorithms for problems, in particular by using a weighting scheme, reductions and our graph partitioning framework KaHIP.</p>
+            <p>
+              In this topic, together with Prof. Dr. P. Bastian, we want to engineer an algorithm that computes a hierarchically nested partition of a graph in a top down fashion. An additional constraint is that, due to the application,
+              the blocks of the partition have to be connected. Lastly, if a sequential prototype has been successfully implemented, we want to transfer this algorithm into distributed memory.
+            </p>
 
+            <h3 id="content">Large k Graph Partitioning</h3>
+            Here, like in the previous topic, we are also looking at graph partitioning. The particular focus here will be to engineer algorithm that can partition graphs into a very large number of blocks. For example, the partitioning
+            problem will be significantly different if the number of blocks is set to k=n/2. In this case, the problem is in P (not in NP anymore) and is very much like graph matching.
 
-<h3 id="content">Machine Learning in Combinatorial Optimization</h3>
-<p> Machine learning is a powerful framework to do all kinds of things. Recently, machine learning has also been applied in combinatorial optimization. In this project, we want to learn reductions to reduce problems to a problem kernel. For example, in a graph, we may be able to decide which parts of it belong to a solution or not and hence remove them or (in case of a branch-and-reduce algorithm) branch on solution vertices first. There are a variety of problem where this may apply. </p>
+            <p></p>
+            <h3 id="content">Engineering A State-of-The-Art Max Clique Solver</h3>
+            A clique C in an undirected graph G = (V, E), where V is the set of vertices and E is the set of edges, is a subset of V such that all its vertices are connected. The size of C is its cardinality. The maximum clique problem is
+            to find a clique of maximum size in G. An important generalization of the maximum clique problem is the maximum weight clique problem, in which the graph has a weight function w that assigns a positive integer called weight to
+            each vertex, and the weight of a clique C is defined to be the total weight of the vertices in C. The project has the goal to transfer reduction rules that have recently been developed for the dual weighted independent set
+            problem to the max clique problem and thus improving the state of the art for the maximum weight clique problem. On the reduced problem, one can then apply an exact algorithm or a heuristic algorithm to solve the problem.
 
+            <p></p>
+            <h3 id="content">Dynamic Orbit Partition</h3>
+            A graph isomorphism is a mapping between the nodes of two graphs that preserves the edges. An automorphism is an isomorphism of a graph to itself. The (non-trivial) automorphisms intuitively represent the symmetries of a graph.
+            Two nodes are in the same orbit, if there is an automorphism that maps one vertex to the other. The orbit partition is of interest for symmetry breaking techniques for various search problems. The goal of this project is to
+            develop dynamic algorithms for computing the orbit partition, i.e., updating the orbit partition when the input graph changes faster than recomputing it from scratch.
 
-<h3 id="content">Hierarchical Partitioning Connected Partioning in Distributed Memory</h3>
-<p>In computer science, engineering, and related fields, graph partitioning is a common technique. 
-For example, in parallel computing good partitionings of unstructured graphs are very valuable.
-In this area, graph partitioning is mostly used to partition the underlying graph model of computation and communication.
-Roughly speaking, nodes in this graph denote computation units, and edges represent communication. 
-This graph needs to be partitioned such that there are few edges between the blocks (pieces). 
-In particular, if we want to use k processors we want to partition the graph into k blocks of about equal size. 
-<p>
-In this topic, together with Prof. Dr. P. Bastian, we want to engineer an algorithm that computes a hierarchically nested partition of a graph in a top down fashion. An additional constraint is that, due to the application, the blocks of the partition have to be connected. Lastly, if a sequential prototype has been successfully implemented, we want to transfer this algorithm into distributed memory.
+            <p></p>
+            <h3 id="content">Engineering Algorithms in Transport Logistics</h3>
+            This is a collaboration with the PTV group. PTV Group offers a wide range of software solutions to help cities and companies shape smart, sustainable and safe transportation and mobility. Planning and optimizing transport
+            logistics is one of the central issues that PTV deals with. This thesis should deal with the ``consideration of local knowledge of drivers when delivering parcels''. Here, we want to determine on the basis of tours driven in
+            delivery areas how likely it is that a driver would drive to the respective stations one after the other if he is very familiar with the area. With these values, we want to change the existing algorithm in such a way that not
+            only the imputed costs are optimized on the basis of the underlying map, but also the driver's ``know-how'' is incorporated. The idea is that the result is similarly good in terms of the quality, but looks more like what an
+            experienced driver would drive.
+            <a href="https://stellenangebote.ptvgroup.com/Abschlussarbeit-im-Bereich-Entwicklung-von-Algorithmen-in--de-j1669.html?sid=4b644ee68b369e0ce22805ef6b5fae57"> Link to description page of PTV (german).</a>
+          </section>
+        </div>
+      </div>
 
-<h3 id="content">Large k Graph Partitioning</h3>
-Here, like in the previous topic, we are also looking at graph partitioning. The particular focus here will be to engineer algorithm that can partition graphs into a very large number of blocks. For example, the partitioning problem will be significantly different if the number of blocks is set to k=n/2. In this case, the problem is in P (not in NP anymore) and is very much like graph matching.
+      <!-- Sidebar -->
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <footer id="footer">
+            <img src="logo3.png" width="250" />
+          </footer>
 
+          <!-- Menu -->
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">News</a></li>
+              <li><a href="team.html">Group Members</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="opensource.html">Open Source</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li>
+                <span class="opener">Teaching</span>
+                <ul>
+                  <li><a href="teaching_opentopics.html">Open Thesis Topics</a></li>
+                  <li><a href="teaching_ss2023.html">Summer Semester 2023</a></li>
 
-<p>
-<h3 id="content">Engineering A State-of-The-Art Max Clique Solver</h3>
-A clique C in an undirected graph G = (V, E), where V is the set of vertices and E is the set of edges, is a subset of V such that all its vertices are connected. The size of C is its cardinality. The maximum clique problem is to find a clique of maximum size in G.  An important generalization of the maximum clique problem is the maximum weight clique problem, in which the graph has a weight function w that assigns a positive integer called weight to each vertex, and the weight of a clique C is defined to be the total weight of the vertices in C. The project has the goal to transfer reduction rules that have recently been developed for the dual weighted independent set problem to the max clique problem and thus improving the state of the art for the maximum weight clique problem. On the reduced problem, one can then apply an exact algorithm or a heuristic algorithm to solve the problem. 
+                  <li><a href="teaching_ws2023.html">Winter Semester 2022/2023</a></li>
+                  <li><a href="teaching_ss2022.html">Summer Semester 2022</a></li>
+                  <li><a href="teaching_ws2022.html">Winter Semester 2021/2022</a></li>
+                  <li><a href="teaching_ss2021.html">Summer Semester 2021</a></li>
+                  <li><a href="teaching_ws2021.html">Winter Semester 2020/2021</a></li>
+                </ul>
+              </li>
+              <li><a href="openpos.html">Open Positions</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
 
+          <!-- Footer -->
+          <footer id="footer">
+            <img src="images/math_inf_dt.png" width="200px" />
+            <img src="heidelberg-university.png" width="200px" />
 
+            <p class="copyright">
+              &copy; Copyright Universität Heidelberg <br />
+              <a href="http://www.uni-heidelberg.de/kontakt.html#impressum">Impressum</a> <br />
+              <a href="https://www.uni-heidelberg.de/datenschutzerklaerung_web.html">Datenschutzerklärung</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
 
-
-<p>
-<h3 id="content">Dynamic Orbit Partition</h3>
-A graph isomorphism is a mapping between the nodes of two graphs that preserves the edges. An automorphism is an isomorphism of a graph to itself. The (non-trivial) automorphisms intuitively represent the symmetries of a graph. Two nodes are in the same orbit, if there is an automorphism that maps one vertex to the other. The orbit partition is of interest for symmetry breaking techniques for various search problems. The goal of this project is to develop dynamic algorithms for computing the orbit partition, i.e., updating the orbit partition when the input graph changes faster than recomputing it from scratch.
-
-<p>
-<h3 id="content">Engineering Algorithms in Transport Logistics</h3>
-        This is a collaboration with the PTV group. 
-PTV Group offers a wide range of software solutions to help cities and companies shape smart, sustainable and safe transportation and mobility.
-Planning and optimizing transport logistics is one of the central issues that PTV deals with. This thesis should deal with the ``consideration of local knowledge of drivers when delivering parcels''.
-
-Here, we want to determine on the basis of tours driven in delivery areas how likely it is that a driver would drive to the respective stations one after the other if he is very familiar with the area. With these values, we want to change the existing algorithm in such a way that not only the imputed costs are optimized on the basis of the underlying map, but also the driver's ``know-how'' is incorporated. The idea is that the result is similarly good in terms of the quality, but looks more like what an experienced driver would drive.
-<a href="https://stellenangebote.ptvgroup.com/Abschlussarbeit-im-Bereich-Entwicklung-von-Algorithmen-in--de-j1669.html?sid=4b644ee68b369e0ce22805ef6b5fae57"> Link to description page of PTV (german).</a>
-
-                                                           </section>
-
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-			<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-<footer id="footer">
-<img src="logo3.png" width=250> 
-</footer>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<ul>
-										<li><a href="index.html">News</a></li>
-										<li><a href="team.html">Group Members</a>
-                                                                                </li>
-										<li><a href="research.html">Research</a></li>
-										<li><a href="opensource.html">Open Source</a></li>
-										<li><a href="publications.html">Publications</a></li>
-										<li>
-											<span class="opener">Teaching</span>
-											<ul>
-												<li><a href="teaching_opentopics.html">Open Thesis Topics</a></li>
-									<li><a href="teaching_ss2023.html">Summer Semester 2023</a></li>
-
-													<li><a href="teaching_ws2023.html">Winter Semester 2022/2023</a></li>
-											<li><a href="teaching_ss2022.html">Summer Semester 2022</a></li>
-												<li><a href="teaching_ws2022.html">Winter Semester 2021/2022</a></li>
-												<li><a href="teaching_ss2021.html">Summer Semester 2021</a></li>
-												<li><a href="teaching_ws2021.html">Winter Semester 2020/2021</a></li>
-											</ul>
-										</li>
-										<li><a href="openpos.html">Open Positions</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</nav>
-
-							<!-- Footer -->
-								<footer id="footer">
-                                                                <img src="images/math_inf_dt.png" width="200px">
-                                                                <img src="heidelberg-university.png" width="200px">
-
-<p class="copyright">&copy;  Copyright Universität Heidelberg <br> <a href="http://www.uni-heidelberg.de/kontakt.html#impressum">Impressum</a>
-        <br> <a href="https://www.uni-heidelberg.de/datenschutzerklaerung_web.html">Datenschutzerklärung</a></p>
-								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
