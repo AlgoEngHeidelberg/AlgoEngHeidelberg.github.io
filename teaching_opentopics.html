@@ -131,8 +131,19 @@ Here, we want to determine on the basis of tours driven in delivery areas how li
 <a href="https://stellenangebote.ptvgroup.com/Abschlussarbeit-im-Bereich-Entwicklung-von-Algorithmen-in--de-j1669.html?sid=4b644ee68b369e0ce22805ef6b5fae57"> Link to description page of PTV (german).</a>
 
 <p>
-<h3 id="content">Submodular Set Function Maximization</h3>
-Numerous problems, such as Partial Dominating Set, Group Closeness Centrality, and k-Medoid Clustering, can be formulated through submodular (monotone) set function maximization. A set function f:P(X)→R assigns a score to each subset of P(X), the power set of X={0,1,...,n−1}. Submodularity describes a property of diminishing returns, whereas monotonicity indicates that adding an element to a set will never decrease its score. Given the prevalence of submodular functions in various problems, we have recently developed a state-of-the-art serial solver for the Cardinality Constrained submodular (monotone) set function maximization problem. The objective of this project is to develop a parallel solver with shared or distributed memory capabilities and/or a GPU-accelerated solver. If you are interested, please contact <a href="#">henning.woydt@informatik.uni-heidelberg.de</a>.
+<h3 id="content">GPU Process Mapping</h3>
+Process Mapping is mapping processes to CPU cores/threads so that the total communication cost is minimized.
+	Distributed algorithms can have millions of processes, which need to communicate with each other.
+	We can model the communication between the processes as a graph G, where weighted vertices represent the processes and their workloads, while weighted edges between the processes represent the communication volume.
+	In modern superclusters there usually is a hardware topology of cores, processors, nodes, racks, rows, and so forth.
+	The communication cost increases the further up two processes are connected in the topology, that is two processes placed in the same core can communicate very fast, but two processes placed in different rows communicate slowly with each other.
+	The goal of Process Mapping is to place the processes onto the cores of the supercomputer such that the workload is balanced and that the total cost of communication is minimized.
+	Process Mapping is very closely related to Graph Partitioning.
+
+Recently, Gilbert et al. published their GPU graph partitioner, ”Jet”, which utilizes the multilevel approach with a strong emphasis on the refinement phase.
+	Their developed solver achieves state-of-the-art solution quality while being up to ten times faster than a multithreaded CPU approach.
+	The goal of this project is to leverage ”Jet” and repurpose it for the problem of Process Mapping.  
+	If this project proves successful, a publication is highly likely, as it would be the first GPU approach to solving the Process Mapping problem.
                                                          
 							</section>
 
