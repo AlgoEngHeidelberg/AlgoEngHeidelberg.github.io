@@ -24,41 +24,91 @@
 								<header id="header">
 									<a href="opensource.html" class="logo"><strong>Open</strong> Source</a>
 								</header>
-<section> 
-	<h2>Open Source</h2>
-We typicall release our most successful implementations as open source software libraries that are easy to use in real-world applications on github as well as project specific websites. 
-In particular, we provide easy to use
-interfaces that are compatible with existing systems so that our tools are easy to adopt. 
-Targeted unique features include scalability to huge numbers of processors and to input sizes that can only be handled by largest parallel machines currently available. The implementations are highly modularized and well documented so that changing the system itself is also possible for other researchers, enabling the emergence of a developer community.
-We have a wide experience in releasing  successful
-algorithm libraries on different subjects.  This includes widely used libraries such as (hyper-)graph partitioning, or independent sets. A complete list follows: 
+<style>
+.os-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.os-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 14px 16px; }
+.os-card h3 { font-size: 0.95em; font-weight: 600; color: #333; margin: 0 0 6px 0; padding: 0 0 6px 0; border-bottom: 2px solid #333; }
+.os-card ul { margin: 0; padding: 0; list-style: none; }
+.os-card ul li { margin: 3px 0; padding: 0; font-size: 0.92em; line-height: 1.5; }
+.os-card ul li a { font-weight: 600; color: #333; text-decoration: none; }
+.os-card ul li a:hover { text-decoration: underline; }
+.os-card ul li .os-desc { color: #777; font-size: 0.9em; }
+</style>
+<section>
+	<h2>Open Source ($\sum > 1600$ Github Stars)</h2>
+<p>We release our most successful implementations as open source software libraries that are easy to use in real-world applications.
+Our tools provide easy-to-use interfaces compatible with existing systems, scalability to huge inputs and large numbers of processors, and modular, well-documented code.</p>
 
-<br>
-<br>
+<p><a href="https://github.com/CHSZLab/CHSZLabLib"><b>CHSZLabLib</b></a> -- unified Python frontend wrapping most of our libraries into a single pip install.</p>
 
-
-	<ol class="reversed">
-
-        <li><a href="https://github.com/ScalableCorrelationClustering/ScalableCorrelationClustering">SCC</a> -- Scalable Correlation Clustering </li>
-        <li><a href="https://github.com/HeiConnect/HeiConnect">HeiConnect</a> -- Heidelberg Connectivity Augmentation </li>
-        <li><a href="https://github.com/HeiOrient/HeiOrient">HeiOrient</a> -- Heidelberg Edge Orientation </li>
-        <li><a href="https://github.com/TransitRouting/FLASH-TB">FLASH-TB</a> -- Public Transit Routing</li>
-        <li><a href="https://github.com/LocalClustering/HeidelbergMotifClustering">HeidelbergMotifClustering</a> -- Local Motif Clustering</li>
-        <li><a href="https://github.com/DynGraphLab">DynGraphLab</a> -- Dynamic Graph Algorithms</li>
-        <li><a href="http://viecut.github.io/">VieCut</a> -- Vienna Minimum Cuts</li>
-        <li><a href="http://vieclus.github.io/">VieClus</a> -- Vienna Graph Clustering</li>
-        <li><a href="http://viennamapping.github.io/">VieM</a> -- Vienna Mapping and Sparse Quadratic Assignment</li>
-        <li><a href="https://dyreach.taa.univie.ac.at/">DyReach</a> -- Dynamic Reachability</li>
-        <li><a href="https://github.com/schulzchristian/multilevelSVM">KaSVM</a> -- Karlsruhe Support Vector Machine</li>
-        <li><a href="https://github.com/sebalamm/KaGen/">KaGen</a> -- Karlsruhe Graph Generation</li>
-        <li><a href="http://kahip.github.io/">KaHIP</a> -- Karlsruhe High Quality Partitioning</li>
-        <li><a href="https://kahypar.org/">KaHyPar</a> -- Karlsruhe Hypergraph Partitioning</li>
-        <li><a href="https://karlsruhedraw.github.io">KaDraw</a> -- Karlsruhe Graph Drawing</li>
-        <li><a href="https://karlsruhelongestpaths.github.io/">KaLP</a> -- Karlsruhe Longest Paths</li>
-        <li><a href="https://karlsruhemis.github.io/">KaMIS</a> -- Karlsruhe Maximum Independent Sets</li>
-        <li><a href="https://datareductionmaxcut.github.io">DMAX</a> -- Data Reduction for Maximum Cut </li>
-        </ol>
-        <br/>
+<div class="os-grid">
+	<div class="os-card">
+		<h3>Partitioning</h3>
+		<ul>
+			<li><a href="http://kahip.github.io/">KaHIP</a> <span class="os-desc">-- High Quality Partitioning</span></li>
+			<li><a href="https://github.com/KaHIP/KaMinPar">KaMinPar</a> <span class="os-desc">-- Parallel Graph Partitioning</span></li>
+			<li><a href="https://kahypar.org/">KaHyPar</a> <span class="os-desc">-- Hypergraph Partitioning</span></li>
+			<li><a href="https://github.com/kahypar/mt-kahypar">Mt-KaHyPar</a> <span class="os-desc">-- Multi-Threaded Hypergraph Partitioning</span></li>
+			<li><a href="https://github.com/KaHIP/HeiStream">HeiStream</a> <span class="os-desc">-- Streaming Graph Partitioning</span></li>
+			<li><a href="https://github.com/KaHIP/FREIGHT">FREIGHT</a> <span class="os-desc">-- Streaming Hypergraph Partitioning</span></li>
+		</ul>
+	</div>
+	<div class="os-card">
+		<h3>Cuts</h3>
+		<ul>
+			<li><a href="http://viecut.github.io/">VieCut</a> <span class="os-desc">-- Vienna Minimum Cuts</span></li>
+			<li><a href="https://github.com/KaHIP/HeiCut">HeiCut</a> <span class="os-desc">-- Hypergraph Minimum Cuts</span></li>
+			<li><a href="https://github.com/KaHIP/HeiConnect">HeiConnect</a> <span class="os-desc">-- Connectivity Augmentation</span></li>
+			<li><a href="https://datareductionmaxcut.github.io">DMAX</a> <span class="os-desc">-- Data Reduction for Maximum Cut</span></li>
+		</ul>
+	</div>
+	<div class="os-card">
+		<h3>Clustering</h3>
+		<ul>
+			<li><a href="http://vieclus.github.io/">VieClus</a> <span class="os-desc">-- Vienna Graph Clustering</span></li>
+			<li><a href="https://github.com/ScalableCorrelationClustering/ScalableCorrelationClustering">SCC</a> <span class="os-desc">-- Scalable Correlation Clustering</span></li>
+			<li><a href="https://github.com/LocalClustering/HeidelbergMotifClustering">HeidelbergMotifClustering</a> <span class="os-desc">-- Local Motif Clustering</span></li>
+		</ul>
+	</div>
+	<div class="os-card">
+		<h3>Independent Sets</h3>
+		<ul>
+			<li><a href="https://karlsruhemis.github.io/">KaMIS</a> <span class="os-desc">-- Maximum Independent Sets</span></li>
+			<li><a href="https://github.com/KarlsruheMIS/CHILS">CHILS</a> <span class="os-desc">-- Concurrent MWIS Heuristic</span></li>
+			<li><a href="https://github.com/KarlsruheMIS/LearnAndReduce">LearnAndReduce</a> <span class="os-desc">-- GNN-Guided MWIS Reductions</span></li>
+			<li><a href="https://github.com/KarlsruheMIS/HyperMIS">HyperMIS</a> <span class="os-desc">-- Hypergraph Independent Sets</span></li>
+			<li><a href="https://github.com/KarlsruheMIS/red2pack">red2pack</a> <span class="os-desc">-- 2-Packing Set Solver</span></li>
+		</ul>
+	</div>
+	<div class="os-card">
+		<h3>Dynamic Graphs</h3>
+		<ul>
+			<li><a href="https://github.com/DynGraphLab/DynDeltaOrientation">DynDeltaOrientation</a> <span class="os-desc">-- Dynamic Edge Orientation</span></li>
+			<li><a href="https://github.com/DynGraphLab/DynMatch">DynMatch</a> <span class="os-desc">-- Dynamic Maximal Matching</span></li>
+			<li><a href="https://github.com/DynGraphLab/DynWMIS">DynWMIS</a> <span class="os-desc">-- Dynamic Max Weight Ind. Set</span></li>
+			<li><a href="https://dyreach.taa.univie.ac.at/">DyReach</a> <span class="os-desc">-- Dynamic Reachability</span></li>
+		</ul>
+	</div>
+	<div class="os-card">
+		<h3>Process Mapping</h3>
+		<ul>
+			<li><a href="http://viennamapping.github.io/">VieM</a> <span class="os-desc">-- Mapping &amp; Sparse QAP</span></li>
+			<li><a href="https://github.com/KaHIP/SharedMap">SharedMap</a> <span class="os-desc">-- Shared-Memory Process Mapping</span></li>
+			<li><a href="https://github.com/KaHIP/IntegratedProcessMapping">IntegratedProcessMapping</a> <span class="os-desc">-- Multi-Level Mapping</span></li>
+		</ul>
+	</div>
+	<div class="os-card">
+		<h3>Other</h3>
+		<ul>
+			<li><a href="https://github.com/HeiOrient/HeiOrient">HeiOrient</a> <span class="os-desc">-- Edge Orientation</span></li>
+			<li><a href="https://github.com/sebalamm/KaGen/">KaGen</a> <span class="os-desc">-- Graph Generation</span></li>
+			<li><a href="https://karlsruhedraw.github.io">KaDraw</a> <span class="os-desc">-- Graph Drawing</span></li>
+			<li><a href="https://karlsruhelongestpaths.github.io/">KaLP</a> <span class="os-desc">-- Longest Paths</span></li>
+			<li><a href="https://github.com/schulzchristian/multilevelSVM">KaSVM</a> <span class="os-desc">-- Support Vector Machine</span></li>
+			<li><a href="https://github.com/TransitRouting/Arc-FlagTB">Arc-FlagTB</a> <span class="os-desc">-- Public Transit Routing</span></li>
+		</ul>
+	</div>
+</div>
 </section>
  						</div>
 					</div>
